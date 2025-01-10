@@ -1,20 +1,51 @@
 ---
 layout: default
 ---
-{% if page._styles %}
-  <!-- Page/Post style -->
-  <style type="text/css">
-    {{ page._styles }}
-  </style>
-{% endif %}
+<style>
+  /* 브라우저 기본 여백 제거 */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.header-background {
+    width: 100vw; /* 전체 뷰포트 너비 */
+    height: 400px; /* 원하는 높이 설정 */
+    background-image: url('/assets/img/logo.png');
+    background-size: cover;
+    background-position: center; /* 중앙 정렬 */
+    background-repeat: no-repeat; /* 반복 방지 */
+    position: absolute; /* 절대 위치 지정 */
+    align-items: center;
+    justify-content: center;
+    top: 0; /* 페이지 상단에 위치 */
+    left: 0; /* 페이지 왼쪽에 위치 */
+    display: flex;
+    overflow-x: hidden;
+    margin: 0; /* 여백 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+/* 헤더 내용 스타일 */
+.header-content {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
 
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
-  </header>
+  <div class="header-background">
+    <div class="header-content">{{ page.title }}</div>
+  </div>
 
-  <article>
+  <article style="margin-top: 400px;">
     {{ content }}
   </article>
 
