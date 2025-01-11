@@ -53,7 +53,7 @@
     </script>
   </d-front-matter>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %}">
     <!-- Header -->
     {% include header.liquid %}
 
@@ -104,9 +104,6 @@
         {% include giscus.liquid %}
       {% endif %}
     </div>
-
-    <!-- Footer -->
-    {% include footer.liquid %}
 
     <!-- JavaScripts -->
     {% include distill_scripts.liquid %}
