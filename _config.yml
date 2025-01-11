@@ -45,7 +45,6 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
@@ -178,7 +177,6 @@ exclude:
   - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
   - lighthouse_results/
   - package.json
