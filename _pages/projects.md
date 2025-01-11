@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Photo
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 울희의 추억,,,
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [work, fun]
 horizontal: false
 ---

@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<style>
+/* 브라우저 기본 여백 제거 */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.header-background {
+    width: 100vw; /* 전체 뷰포트 너비 */
+    height: 400px; /* 원하는 높이 설정 */
+    background-image: url('/assets/img/logo.png');
+    background-size: cover;
+    background-position: center; /* 중앙 정렬 */
+    background-repeat: no-repeat; /* 반복 방지 */
+    position: absolute; /* 절대 위치 지정 */
+    align-items: center;
+    justify-content: center;
+    top: 0; /* 페이지 상단에 위치 */
+    left: 0; /* 페이지 왼쪽에 위치 */
+    display: flex;
+    overflow-x: hidden;
+    margin: 0; /* 여백 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+/* 헤더 내용 스타일 */
+.header-content {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* h1 제목 스타일 통일 */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+/* h3 텍스트 중앙 정렬 추가 */
+h3 {
+    text-align: center; /* 중앙 정렬 */
+    font-size: 1.5em; /* 글자 크기 조정 (선택 사항) */
+    margin: 20px 0; /* 상하 여백 조정 */
+}
+</style>
+
+
+<div class="post">
+  <div class="header-background">
+    <div class="header-content">{{ page.title }}</div>
+  </div>
+
+  <article style="margin-top: 400px; padding-bottom: 100px;">
+
+    <div id="contact-info">
+      <h1>| Email |</h1>
+      <h3><a href="mailto:jongkil@ewha.ac.kr">jongkil@ewha.ac.kr</a></h3>
+    </div>
+
+    <div class="address" style="margin-top: 100px;">
+      <h1>| Address |</h1>
+      <h3>서울특별시 서대문구 이화여대길 52 이화 오뚜기어린이집 502호</h3>
+      <div id="map" style="margin: 20px 0;">
+        <!-- 지도 삽입 영역 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.6241816933032!2d126.94709917202368!3d37.56691940893034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c99489846cb39%3A0xdfe4bd22ba8d2ac5!2z7J207ZmU7Jik65qc6riw7Ja066aw7J207KeR!5e0!3m2!1sko!2skr!4v1722790097181!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </article>
+</div>
