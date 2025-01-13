@@ -1,0 +1,42 @@
+---
+layout: page
+---
+<style>
+  .semester-section {
+      margin-top: 50px;
+  }
+
+  .semester-title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #222;
+  }
+
+  .semester-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .semester-content div {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4b4a4a;
+}
+</style>
+
+
+<div class="teaching-sections">
+  {% for semester in site.data.teaching %}
+  <div class="semester-section">
+    <div class="semester-title">{{ semester.name }}</div>
+    <div class="semester-content">
+        {% for course in semester.courses %}
+          <div>- {{ course }}</div>
+        {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

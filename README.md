@@ -16,14 +16,28 @@
     3. 사진들은 모두 assets/img에 있다. 
 
 ## Home
-    - 설명 : 메인 페이지지
+    - 메인 페이지
     - 페이지 위치 : _pages/home.md
-    - 페이지 양식 : _layout/about.liquid && _layout/default.liquid
+    - 페이지 양식 : _layout/about.liquid
 
 ## People
-    - 설명 : 랩실 구성원에 대한 페이지
+    - 랩실 구성원에 대한 페이지
     - 페이지 위치 : _pages/people.md 
-    - 페이지 양식 : _layout/profiles.liquid && _layout/page.liquid
+    - 페이지 양식 : _layout/profiles.liquid
     - 구성 요소
         - 교수님 설명 : about_JK.md
         - 교수님 약력 : _data/cv.yml && _layouts/cv.liquid
+
+## Publications
+    - 논문 페이지
+    - 페이지 위치 : _pages/publications.md
+    - 페이지 양식 : _includes/bib_search.liquid
+    - 구성 요소 
+        - 논문 정보 : _bibliography/papers.bib
+
+## Publications
+    - 수업 페이지
+    - 페이지 위치 : _pages/teaching.md
+    - 페이지 양식 : _includes/teaching.liquid
+    - 구성 요소 
+        - 수업 정보 : _data/teaching.yml
