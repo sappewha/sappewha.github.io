@@ -1,4 +1,4 @@
-# 사용법법
+# 사용법
 1. docker를 이용해서 파일 수정을 한다. 실시간으로 확인할 수 있다. 
     -> docker desktop을 열고, 
     -> docker compose pull 
