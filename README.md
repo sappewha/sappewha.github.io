@@ -26,7 +26,7 @@
     - 페이지 양식 : _layout/profiles.liquid
     - 구성 요소
         - 교수님 설명 : about_JK.md
-        - 교수님 약력 : _data/cv.yml && _layouts/cv.liquid
+        - 교수님 약력 : _data/cv.yml
 
 ## Publications
     - 논문 페이지
