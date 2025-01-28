@@ -1,13 +1,15 @@
 <header>
+  
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
-    <div class="container">
+  <nav id="navbar" class="navbar navbar-dark navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+    <div class="container-fluid"> <!-- ✅ 전체 너비 유지 -->
+      
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
-                {{- site.first_name -}}
+                {{- site.first_name -}} 
               </span>
             {% endif %}
             {% if site.middle_name %}
@@ -21,19 +23,11 @@
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
+
       <!-- Navbar Toggle -->
-      <button
-        class="navbar-toggler collapsed ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
@@ -43,7 +37,9 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+            {% if page.permalink == '/' %}
+              {% assign about_title = page.title %}
+            {% endif %}
           {% endfor %}
 
           <!-- About -->
@@ -68,15 +64,7 @@
                   {% endif %}
                 {% endfor %}
                 <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
@@ -87,10 +75,7 @@
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>
                       {% else %}
-                        <a
-                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
-                          href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
-                        >
+                        <a class="dropdown-item {% if page.title == child.title %}active{% endif %}" href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}">
                           {{- child.title -}}
                         </a>
                       {% endif %}
@@ -98,16 +83,8 @@
                   </div>
                 </li>
               {% else %}
-                {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
-                  {%- if p.permalink contains '://' -%}
-                    {%- assign url = p.permalink -%}
-                  {%- elsif p.permalink contains '/blog/' -%}
-                    {%- assign url = '/blog/' -%}
-                  {%- else -%}
-                    {%- assign url = p.url -%}
-                  {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
+                  <a class="nav-link" href="{{ p.url | relative_url }}">
                     {{- p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
@@ -117,6 +94,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
@@ -125,8 +103,9 @@
               </button>
             </li>
           {% endif %}
+
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
+            <!-- Toggle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
@@ -139,6 +118,7 @@
       </div>
     </div>
   </nav>
+
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
@@ -148,3 +128,46 @@
     </progress>
   {% endif %}
 </header>
+
+<style>
+  /* ✅ 1️⃣ 메뉴바 검은색 배경 고정 */
+  .navbar {
+    background-color: black !important;
+    padding: 15px;
+  }
+
+  /* ✅ 2️⃣ 기본 메뉴 텍스트 흰색 */
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+
+  /* ✅ 3️⃣ 현재 페이지 메뉴 형광 초록 */
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #39ff14 !important;
+  }
+
+  /* ✅ 4️⃣ 메뉴 아이템과 SAPP 타이틀에 좌우 여백 추가 */
+  .navbar-nav .nav-item {
+    padding: 0 15px; /* 메뉴 아이템 간격 조정 */
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* ✅ 5️⃣ 모바일에서도 잘 보이도록 메뉴바 스타일 조정 */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+    }
+    .navbar-nav .nav-item {
+      display: block;
+      width: 100%;
+    }
+  }
+</style>
