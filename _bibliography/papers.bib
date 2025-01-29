@@ -1,55 +1,198 @@
 ---
 ---
-@article{1,
-  title={5G-AKA-FS: A 5G Authentication and Key Agreement Protocol for Forward Secrecy},
-  author={Ilsun You and Sunwoo Kim and Seonghan Shin and Hoseok Kwon and Jongkil Kim and Joonsang Baek},
-  journal={Sensors},
-  volume={24},
-  number={1},
-  pages={159},
-  year={2024},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+
+@InProceedings{10.1007/978-3-031-25659-2_8,
+  author = {Intae Kim and Willy Susilo and Joonsang Baek and Jongkil Kim and Yang-Wai Chow},
+  editor = {Ilsun You and Taek-Young Youn},
+  title = {TLS Goes Low Cost: When TLS Meets Edge},
+  booktitle = {Information Security Applications},
+  year = {2023},
+  publisher = {Springer Nature Switzerland},
+  address = {Cham},
+  pages = {102--113},
+  abstract = {Recently, we have witnessed an upward trend in adopting the Transport Layer Security version 1.3 (TLS 1.3) to numerous applications (Google Cloud, Microsoft software products, CloudFlare). Although TLS 1.3 provides higher efficiency than the previous versions of TLS, its handshake protocol still requires the server to send its certificate to the client, which consumes a significant amount of network bandwidth. Moreover, the client becomes idle while waiting for the certificate to arrive. This latency is one of the causes of the TLS handshake delay. Adequate adoption of edge computing can increase the efficiency of traditional server-client architectures. In this paper, we envision a new paradigm to adopt edge computing into TLS to improve the efficiency of session establishment. TLS-EC (TLS with Edge Computing) protocol improves the TLS 1.3 handshake efficiency by reducing server-side certificate transmission overhead and network latency between server and client through edge computing. We also present the implementation of TLS-EC, which shows a reduction in both the handshake time and the bandwidth consumption between the server and the client during the TLS handshake. Our experiments indicate that bandwidth consumption can be reduced by 33% and 49%, respectively, for ECDSA and RSA-based certificates with a 128-bit security level compared to TLS 1.3 full handshake.},
+  isbn = {978-3-031-25659-2},
+  doi = {10.1007/978-3-031-25659-2_8},
 }
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@Article{s23094181,
+  author = {Jongkil Kim},
+  title = {Backward Compatible Identity-Based Encryption},
+  journal = {Sensors},
+  volume = {23},
+  year = {2023},
+  number = {9},
+  article-number = {4181},
+  doi = {10.3390/s23094181},
+  issn = {1424-8220},
+  abstract = {In this paper, we present a new identity-based encryption (IBE) system named Backward Compatible Identity-based Encryption (BC-IBE). BC-IBE solves the problem caused by out-of-synchronization between users’ private keys and ciphertexts. Encryption systems such as revocable IBE or revocable Attribute-based Encryption (ABE) often require updating private keys to revoke users after a certain time period. However, in those schemes, an updated key can be used to decrypt the ciphertexts created only during the current time period. Once the key is updated and the previous keys are removed, the user loses access to past ciphertexts. In our system, user private keys and ciphertexts can be updated periodically with time tags, allowing revocation of users who do not receive an updated key. However, a newly issued private key is backward compatible, meaning it decrypts both present and past ciphertexts. Compared to existing revocable identity-based encryption, BC-IBE simplifies key management and securely delegates ciphertext updates. This system is suitable for dynamic environments such as IoT networks or cloud data storage.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@ARTICLE{9792266,
+  author = {Changhee Hahn and Jongkil Kim},
+  title = {Verifiable Outsourced Decryption of Encrypted Data From Heterogeneous Trust Networks},
+  journal = {IEEE Internet of Things Journal},
+  year = {2022},
+  volume = {9},
+  number = {22},
+  pages = {22559-22570},
+  doi = {10.1109/JIOT.2022.3181684},
+  keywords = {Cloud computing, Servers, Cryptography, Encryption, Costs, Internet of Things, Privacy, Security},
+  abstract = {With the growth of cloud computing and IoT, encrypted data outsourcing has become a necessity. However, verifying outsourced decryption results efficiently remains challenging. This paper introduces a verifiable outsourced decryption scheme for heterogeneous trust networks. Our approach enables a cloud server to perform decryption while allowing clients to verify its correctness. The proposed scheme enhances security, reduces computational overhead, and ensures practical usability for large-scale encrypted environments.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{10.1145/3433210.3437525,
+  author = {Jongkil Kim and Seyit Camtepe and Joonsang Baek and Willy Susilo and Josef Pieprzyk and Surya Nepal},
+  title = {P2DPI: Practical and Privacy-Preserving Deep Packet Inspection},
+  year = {2021},
+  isbn = {9781450382878},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3433210.3437525},
+  abstract = {With increasing encrypted Internet traffic, traditional intrusion detection systems (IDS) face difficulties in detecting malicious traffic. Existing deep packet inspection (DPI) techniques for encrypted traffic require heavy computations or compromise privacy. We propose P2DPI, a practical and privacy-preserving DPI system for encrypted traffic. P2DPI retains BlindBox’s security guarantees while achieving efficient setup and encryption. Compared to PrivDPI, P2DPI significantly reduces overhead and enhances detection capabilities. We formally analyze P2DPI’s security and implement it for performance comparison. Results demonstrate superior efficiency in encrypted traffic inspection.},
+  booktitle = {Proceedings of the 2021 ACM Asia Conference on Computer and Communications Security},
+  pages = {135–146},
+  numpages = {12},
+  keywords = {Searchable encryption, Intrusion detection system, Exfiltration system, Deep packet inspection},
+  location = {Virtual Event, Hong Kong},
+  series = {ASIA CCS '21}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@InProceedings{10.1007/978-3-030-88428-4_6,
+  author = {Viet Xuan Phuong Tran and Willy Susilo and Guomin Yang and Jongkil Kim and Yang-Wai Chow and Dongxi Liu},
+  editor = {Elisa Bertino and Haya Shulman and Michael Waidner},
+  title = {SyLPEnIoT: Symmetric Lightweight Predicate Encryption for Data Privacy Applications in IoT Environments},
+  booktitle = {Computer Security -- ESORICS 2021},
+  year = {2021},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {106--126},
+  abstract = {Privacy preserving mechanisms are essential for protecting data in IoT environments. This is particularly challenging as IoT environments often contain heterogeneous resource-constrained devices. One method for protecting privacy is to encrypt data with a pattern or metadata. To prevent information leakage, an evaluation using the pattern must be performed before the data can be retrieved. However, the computational costs associated with typical privacy preserving mechanisms can be costly. This makes such methods ill-suited for resource-constrained devices, as the high energy consumption will quickly drain the battery. This work solves this challenging problem by proposing SyLPEnIoT -- Symmetric Lightweight Predicate Encryption for IoT, which is lightweight and efficient compared with existing encryption schemes. Based on the bitwise-XOR operation, we use this basic gate to construct a scheme that transfers encrypted data onto more powerful machines. Furthermore, for resource-constrained IoT devices, the requester can authenticate devices at different levels based on the type of communication. SyLPEnIoT was meticulously designed to run on a gamut of IoT devices, including ultra low-power sensors that are constrained in terms of CPU processing, memory and energy consumption, which are widely deployed in real IoT ecosystems.},
+  isbn = {978-3-030-88428-4},
+  doi = {10.1007/978-3-030-88428-4_6},
+}
+
+@Article{Chow2021QR,
+  author = {Yang-Wai Chow and Willy Susilo and Joonsang Baek and Jongkil Kim and Wei Zong},
+  title = {Exploiting QR Code Error Correction for Digital Image Watermarking},
+  journal = {J. Wirel. Mob. Networks Ubiquitous Comput. Dependable Appl.},
+  year = {2021},
+  volume = {12},
+  number = {2},
+  pages = {114--140},
+  url = {https://jowua.com/article/jowua-v12n2-5/70488/},
+  abstract = {The growing use of online digital media has made the task of protecting copyright and intellectual property increasingly more challenging. Data hiding techniques, such as digital watermarking, can be used to embed data within a signal for various purposes, e.g., for digital rights management. To achieve this, there are a number of desirable properties for digital watermarking, namely, imperceptibility, capacity, robustness, and security. The research presented in this paper investigates a QR code based watermarking technique for digital images. The utilization of QR codes for this purpose has a number of advantages due to the QR code structure’s inherent properties. As such, the aim of this work is to exploit the inbuilt error correction mechanism and to capitalize on the high data capacity of the QR code structure. This paper examines the proposed QR code watermarking technique and demonstrates its robustness and security against common digital image attacks that may be carried out by an adversary on the watermarked image.},
+  pdf = {ExploitingQRCodeErrorCorrectionforDigitalImageWatermarking.pdf},
+}
+
+@article{CHOW2021102834,
+  author    = {Yang-Wai Chow and Willy Susilo and Jianfeng Wang and Richard Buckland and Joonsang Baek and Jongkil Kim and Nan Li},
+  title     = {Utilizing QR codes to verify the visual fidelity of image datasets for machine learning},
+  journal   = {Journal of Network and Computer Applications},
+  volume    = {173},
+  pages     = {102834},
+  year      = {2021},
+  issn      = {1084-8045},
+  doi       = {10.1016/j.jnca.2020.102834},
+  keywords  = {Adversarial machine learning, Cyber security, QR code, Visual fidelity, Watermarking},
+  abstract  = {Machine learning is becoming increasingly popular in modern technology and has been adopted in various application areas. However, researchers have demonstrated that machine learning models are vulnerable to adversarial examples in their inputs, which has given rise to a field of research known as adversarial machine learning. Potential adversarial attacks include methods of poisoning datasets by perturbing input samples to mislead machine learning models into producing undesirable results. While such perturbations are often subtle and imperceptible from the perspective of a human, they can greatly affect the performance of machine learning models. This paper presents two methods of verifying the visual fidelity of image-based datasets by using QR codes to detect perturbations in the data. In the first method, a verification string is stored for each image in a dataset. These verification strings can be used to determine whether or not an image in the dataset has been perturbed. In the second method, only a single verification string is stored and can be used to verify whether an entire dataset is intact.}
+}
+
+@ARTICLE{9271858,
+  author={Intae Kim and Willy Susilo and Joonsang Baek and Jongkil Kim},
+  journal={IEEE Transactions on Dependable and Secure Computing}, 
+  title={Harnessing Policy Authenticity for Hidden Ciphertext Policy Attribute-Based Encryption}, 
+  year={2022},
+  volume={19},
+  number={3},
+  pages={1856-1870},
+  abstract = {The field of cryptography has endeavored to solve numerous security problems. However, a common premise of many of those problems is that the encryptor always generates the ciphertext correctly. Around 10 years ago, this premise was not a problem. However, due to the rapid development and the use of the cloud, which has introduced various access policies and functionalities to provide higher security, it is not correct to assume that this premise is always applied. A “Fake Policy Attack”, which we introduce in this article, is an attack that incorrectly sets the access policy of the ciphertext against the system rules so that users who do not meet the rules can decrypt the ciphertext. In other words, it is an attack that ignores the rules of the system and eventually breaks the security and leaks information. This attack can be more critical for the application environments that require strong security not to leak any related information about ciphertext. In this article, we demonstrate the possible threat of the Fake Policy Attack by providing two relevant examples. Then, we propose a scheme called Policy Authenticable ABE (PA-ABE) to resolve this issue. We provide a formal security analysis of the proposed scheme and performance evaluation results based on our implementation.},
+  doi={10.1109/TDSC.2020.3040712}
+}
+
+@inproceedings{10.1145/3320269.3372199,
+  author = {Joonsang Baek and Jongkil Kim and Willy Susilo},
+  title = {Inspecting TLS Anytime Anywhere: A New Approach to TLS Interception},
+  year = {2020},
+  isbn = {9781450367509},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/3320269.3372199},
+  abstract = {Transport Layer Security (TLS) is one of the most widely-used security protocols for the modern internet. However, TLS does not differentiate regular users from threat actors who want to evade detection through the privacy provided by TLS. For this reason, organizations have been increasingly interested in middlebox technology whereby encrypted TLS traffic can be filtered and inspected. So far, the majority of middleboxes utilize the "TLS interception proxy" technique in which a middlebox acts as a proxy to intercept the TLS traffic between the user and the server. However, this approach has the problem of forcing the user to accept the proxy's certificate. It also has a performance issue as the proxy needs to decrypt and re-encrypt the traffic. In this paper, we make a new approach to TLS inspection. Our solution, which we call "IA2-TLS (Inspecting TLS Anytime Anywhere)", is based on the idea of securely binding the middlebox's "inspection key" with the random nonces used in the TLS protocol. Since IA2-TLS does not employ the TLS interception proxy technique, it does not have the problem of the proxy certificate management and performance degradation. Inspection through IA2-TLS is not confined to a specific location and can be provided at any area along the path of the network. Moreover, the inspection can be performed in real time or non-real time, depending on the user's preference or network circumstances. We provide formal security analysis that the master-secret of the IA2-TLS protocol remains secure if the inspection key is kept secret. We also present our implementation of IA2-TLS, which shows the feasibility of our approach.},
+  booktitle = {Proceedings of the 15th ACM Asia Conference on Computer and Communications Security},
+  pages = {116–126},
+  numpages = {11},
+  keywords = {TLS/SSL inspection, TLS},
+  location = {Taipei, Taiwan},
+  series = {ASIA CCS '20'}
+}
+
+@InProceedings{10.1007/978-3-030-57808-4_13,
+  author = {Intae Kim and Seong Oun Hwang and Willy Susilo and Joonsang Baek and Jongkil Kim},
+  editor = {Mauro Conti and Jianying Zhou and Emiliano Casalicchio and Angelo Spognardi},
+  title = {Efficient Anonymous Multi-group Broadcast Encryption},
+  booktitle = {Applied Cryptography and Network Security},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {251--270},
+  abstract = {Nowadays, broadcasters must supply diverse content to multiple groups without delay in platforms such as social media and streaming sites. Unfortunately, conventional broadcast encryption schemes are deemed unsuitable for such platforms since they generate an independent ciphertext for each piece of contents and hence the number of headers generated during encryption increases linearly with the size of contents. The increased number of headers will result in wasting a limited network bandwidth, which makes the application impractical. To resolve this issue, multi-channel broadcast encryption was proposed in the literature, which transmits a single header for multiple channels to several groups of viewers at a time. However, the multi-channel broadcast encryption is also impractical because it requires heavy computations, communications, and storage overheads. Moreover, it should also address additional issues, such as receiver privacy (anonymity), static user-set size, and limited encryption. In this work, we aim to tackle this problem by proposing an efficient broadcast encryption scheme, called ``anonymous multi-group broadcast encryption''. This primitive achieves faster encryption and decryption, provides smaller sized public parameters, private keys, and ciphertexts. Hence, it solves the aforementioned issues of the multi-channel broadcast encryption. Specifically, the proposed scheme provides provable anonymity and confidentiality based on the External Diffie-Hellman (XDH) and \$\mathcal{P}\$-Decisional Bilinear Diffie-Hellman (DBDH) assumptions, respectively, in the standard model.},
+  isbn = {978-3-030-57808-4},
+  doi = {10.1007/978-3-030-57808-4_13}
+}
+
+@Article{9056529,
+  author = {Changhee Hahn and Jongkil Kim and Hyunsoo Kwon and Junbeom Hur},
+  journal = {IEEE Transactions on Cloud Computing}, 
+  title = {Efficient IoT Management With Resilience to Unauthorized Access to Cloud Storage}, 
+  year = {2022},
+  volume = {10},
+  number = {2},
+  pages = {1008-1020},
+  abstract = {Cloud-based Internet of Things (IoT) management services are a promising means of ingesting data from globally dispersed devices. In this setting, it is important to regulate access to data managed by potentially untrusted cloud servers. Attribute-based encryption (ABE) is a highly effective tool for access control. However, applying ABE to IoT environments shows limitations in the following three aspects: First, the demands for storage resources increase in proportion to the complexity of the access control policies. Second, the computation cost of ABE is onerous for resource-limited devices. Lastly, ABE alone is intractable to prevent illegal key-sharing which leads to unauthorized access to data. In this article, we propose an efficient and secure cloud-based IoT data management scheme using ABE. First, we remove the storage-side dependency on the complexity of the access control policies. Second, a substantial part of computationally intensive operations is securely outsourced to the cloud servers. Lastly, unauthorized access to data via illegal key-sharing is strictly forbidden. Our security analysis and experimental results show the security and practicability of the proposed scheme.},
+  keywords = {Cloud computing, Internet of Things, Access control, Servers, Encryption, IoT, cloud computing, access control, attribute-based encryption},
+  doi = {10.1109/TCC.2020.2985046}
+}
+
+@InProceedings{10.1007/978-3-030-39303-8_3,
+  author = {Yang-Wai Chow and Willy Susilo and Joonsang Baek and Jongkil Kim},
+  editor = {Ilsun You},
+  title = {QR Code Watermarking for Digital Images},
+  booktitle = {Information Security Applications},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {25--37},
+  abstract = {With the growing use of online digital media, it is becoming increasingly challenging to protect copyright and intellectual property. Data hiding techniques like digital watermarking can be used to embed data within a signal for purposes such as digital rights management. This paper investigates a watermarking technique for digital images using QR codes. The advantage of using QR codes for watermarking is that properties of the QR code structure include error correction and high data capacity. This paper proposes a QR code watermarking technique, and examines its robustness and security against common digital image attacks.},
+  isbn = {978-3-030-39303-8},
+  doi = {10.1007/978-3-030-39303-8_3}
+}
+
+@InProceedings{10.1007/978-3-030-39303-8_16,
+  author = {Jongkil Kim and Joonsang Baek and Willy Susilo and Yang-Wai Chow},
+  editor = {Ilsun You},
+  title = {Efficient Decentralized Random Commitment Key Generation for Mixnet Shuffle Proof},
+  booktitle = {Information Security Applications},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {206--216},
+  abstract = {In this paper, we propose a new commitment key generation method for the mixnet shuffle proof developed by Bayer-Groth in Eurocrypt' 12. The problem of the shuffle proof algorithm is that it gives too much power to a single authority: It has been shown that the authority, who creates commitment keys and generates proofs for verifying electronic voting (e-voting) results, also can produce malicious verification proofs by logging the exponents of commitment keys. We suggest a new way to decentralize the commitment key generation process by allowing multiple parties to jointly participate in the commitment key generation. Therefore, any of the parties, even who operating e-voting system, cannot know the exponents of commitment keys fully. Therefore, our suggestion distributes the power that is concentrated on the single authority and makes the verification process of the proof more sound and prudent.},
+  isbn = {978-3-030-39303-8},
+  doi = {10.1007/978-3-030-39303-8_16}
+}
+
+@InBook{10.1007/978-3-030-43795-4_12,
+  author = {Raj Gaire and Chigulapalli Sriharsha and Deepak Puthal and Hendra Wijaya and Jongkil Kim and Prateeksha Keshari and Rajiv Ranjan and Rajkumar Buyya and Ratan K. Ghosh and R. K. Shyamasundar and Surya Nepal},
+  editor = {Rajiv Ranjan and Karan Mitra and Prem Prakash Jayaraman and Lizhe Wang and Albert Y. Zomaya},
+  title = {Internet of Things (IoT) and Cloud Computing Enabled Disaster Management},
+  booktitle = {Handbook of Integration of Cloud Computing, Cyber Physical Systems and Internet of Things},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {273--298},
+  abstract = {Disaster management demands a near real-time information dissemination so that the emergency services can be provided to the right people at the right time. Recent advances in information and communication technologies enable collection of real-time information from various sources. For example, sensors deployed in the fields collect data about the environment. Similarly, social networks like Twitter and Facebook can help to collect data from people in the disaster zone. On one hand, inadequate situation awareness in disasters has been identified as one of the primary factors in human errors with grave consequences such as loss of lives and destruction of critical infrastructure. On the other hand, the growing ubiquity of social media and mobile devices, and pervasive nature of the Internet-of-Things means that there are more sources of outbound traffic, which ultimately results in the creation of a data deluge, beginning shortly after the onset of disaster events, leading to the problem of information tsunami. In addition, security and privacy has crucial role to overcome the misuse of the system for either intrusions into data or overcome the misuse of the information that was meant for a specified purpose. These problems can be addressed by processing the collected data in real-time and extracting meaningful and actionable information for emergency providers while taking care of security and privacy aspects. Such situation-awareness applications demand a large amount of computing resources. The cloud, which provides elastic and scalable infrastructure, becomes the natural choice for such applications. In this chapter, we provide such a situation aware application to support disaster management data lifecycle, i.e. from data ingestion and processing to alert dissemination. We utilize cloud computing, Internet of Things and social computing technologies to achieve a scalable, efficient, and usable situation-aware application called Cloud4BigData.},
+  isbn = {978-3-030-43795-4},
+  doi = {10.1007/978-3-030-43795-4_12}
 }
 
