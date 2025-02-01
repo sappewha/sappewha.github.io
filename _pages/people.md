@@ -24,7 +24,7 @@ profiles:
       <p>djebbiella@gmail.com</p>
 
   - align: left
-    image: student_1.jpg
+    image: Yeonhee.jpg
     name: Yeonhee Kim
     image_circular: false # crops the image to make it circular
     more_info: >
@@ -38,21 +38,21 @@ profiles:
       <p>boeun0v0@gmail.com</p>
   
   - align: left
-    image: student_3.jpg
+    image: Boluwatife.jpg
     name: Oshunlola, Boluwatife Alimat
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>boluwatife@ewha.ac.kr</p>
 
   - align: left
-    image: student_5.jpg
+    image: Jeeeun.jpg
     name: Jeeeun Park
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>lucykorea414@ewhain.net</p>
 
   - align: left
-    image: student_4.jpg
+    image: Hyunsol.jpg
     name: Hyunsol Mun
     image_circular: false # crops the image to make it circular
     more_info: >
