@@ -118,7 +118,7 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "교수님과 김보은 학생의 생일을 축하합니다.",
+          description: "김종길 교수님과 김보은 학생의 생일을 축하합니다.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250121_birthday/";
             },},{id: "projects-photo",
