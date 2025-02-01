@@ -66,14 +66,19 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "projects-project-1",
-          title: 'project 1',
+    },{id: "projects-cvc-워크숍",
+          title: 'CVC 워크숍',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/202412_AICompS/";
+            },},{id: "projects-cvc-워크숍",
+          title: 'CVC 워크숍',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/202412_MobiSec/";
             },},{id: "projects-project-2",
           title: 'project 2',
-          description: "a project with a background image and giscus comments",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
@@ -111,6 +116,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "교수님과 김보은 학생의 생일을 축하합니다.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250121_birthday/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2024 CVC 워크숍",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20241126_CVC/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
