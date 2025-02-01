@@ -5,7 +5,7 @@ permalink: /projects/
 description: 울희의 추억,,,
 nav: true
 nav_order: 4
-display_categories: [work, fun]
+display_categories: [work, fun, etc]
 horizontal: false
 ---
 
@@ -18,7 +18,8 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  {% assign sorted_projects = categorized_projects | sort: "start_date" | reverse %}
+
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">

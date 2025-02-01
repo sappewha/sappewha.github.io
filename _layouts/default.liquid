@@ -13,6 +13,7 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
+    
   </head>
 
   <!-- Body -->
@@ -57,5 +58,12 @@
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
+
+    <style>
+      .container {
+        padding-bottom: 200px; /* 페이지 하단 공백 추가 */
+      }
+    </style>
+
   </body>
 </html>

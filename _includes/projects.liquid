@@ -1,3 +1,34 @@
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  .card-title {
+      font-size: 1.8em; /* 적당한 크기로 조정 */
+      font-weight: 800; /* 굵기 조정 */
+      font-family: 'Poppins', 'Noto Sans KR';
+      margin: 0 0 10px;
+      color: #333; /* 어두운 색상 */
+      text-align: center;
+  }
+
+  .project-date {
+      font-size: 0.95em; /* 약간 작게 */
+      color: #888; /* 회색 톤 */
+      margin-bottom: 5px; /* 기존 값보다 줄인 여백 */
+  }
+
+  .card-text {
+      font-size: 1em;
+      color: #555;
+  }
+
+  /* 카드 안의 텍스트 정렬 */
+  .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+</style>
+
 <div class="col">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
@@ -12,7 +43,14 @@
         %}
       {% endif %}
       <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
+        <h2 class="card-title">{{ project.post-title }}</h2>
+        <p class="project-date">
+          {% if project.end_date %}
+            {{ project.start_date | date: "%Y-%m-%d" }} ~ {{ project.end_date | date: "%Y-%m-%d" }}
+          {% else %}
+            {{ project.start_date | date: "%Y-%m-%d" }}
+          {% endif %}
+        </p>
         <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
@@ -33,3 +71,4 @@
     </div>
   </a>
 </div>
+
