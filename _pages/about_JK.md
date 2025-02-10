@@ -5,4 +5,4 @@ Ewha Womans University
 
 jongkil@ewha.ac.kr
 
-010-2254-2099
+02-3277-4235

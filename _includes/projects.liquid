@@ -1,6 +1,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+
+  .custom-img {
+      width: 100%; /* 부모 요소 너비에 맞게 */
+      height: 180px !important; /* 원하는 높이 설정 */
+      object-fit: cover; /* 비율을 유지하면서 영역에 맞추기 */
+  }
   .card-title {
       font-size: 1.8em; /* 적당한 크기로 조정 */
       font-weight: 800; /* 굵기 조정 */
@@ -39,14 +45,14 @@
           path=project.img
           sizes = "250px"
           alt="project thumbnail"
-          class="card-img-top"
+          class="card-img-top custom-img"
         %}
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.post-title }}</h2>
         <p class="project-date">
           {% if project.end_date %}
-            {{ project.start_date | date: "%Y-%m-%d" }} ~ {{ project.end_date | date: "%Y-%m-%d" }}
+            {{ project.start_date | date: "%Y-%m-%d" }}~{{ project.end_date | date: "%Y-%m-%d" }}
           {% else %}
             {{ project.start_date | date: "%Y-%m-%d" }}
           {% endif %}

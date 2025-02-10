@@ -31,7 +31,7 @@ profiles:
       <p>heedong@ewha.ac.kr</p>
 
   - align: left
-    image: student_2.jpg
+    image: Boeun.png
     name: Boeun Kim
     image_circular: false # crops the image to make it circular
     more_info: >
