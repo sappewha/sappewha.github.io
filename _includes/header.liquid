@@ -94,69 +94,43 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-
-          {% if site.search_enabled %}
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          {% endif %}
-
-          {% if site.enable_darkmode %}
-            <!-- Toggle theme mode -->
-            <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
-              </button>
-            </li>
-          {% endif %}
         </ul>
       </div>
     </div>
   </nav>
-
-  {% if site.enable_progressbar %}
-    <!-- Scrolling Progress Bar -->
-    <progress id="progress" value="0">
-      <div class="progress-container">
-        <span class="progress-bar"></span>
-      </div>
-    </progress>
-  {% endif %}
 </header>
 
 <style>
   /* ✅ 1️⃣ 메뉴바 검은색 배경 고정 */
   .navbar {
-    background-color: black !important;
-    padding: 15px;
+    background-color: white !important;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    color: black !important;
+    font-size: 1.8rem !important; /* 크기 증가 */
+    font-weight: 900 !important;  /* 볼드 적용 */
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   /* ✅ 2️⃣ 기본 메뉴 텍스트 흰색 */
   .navbar-nav .nav-item .nav-link {
-    color: white !important;
+    color: black!important;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s ease-in-out;
   }
 
   /* ✅ 3️⃣ 현재 페이지 메뉴 형광 초록 */
-  .navbar-nav .nav-item.active .nav-link,
   .navbar-nav .nav-item .nav-link:hover {
-    color: #39ff14 !important;
+    color: #00462A !important;
   }
 
   /* ✅ 4️⃣ 메뉴 아이템과 SAPP 타이틀에 좌우 여백 추가 */
   .navbar-nav .nav-item {
-    padding: 0 15px; /* 메뉴 아이템 간격 조정 */
-  }
-
-  .navbar-brand {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 0 10px; /* 메뉴 아이템 간격 조정 */
   }
 
   /* ✅ 5️⃣ 모바일에서도 잘 보이도록 메뉴바 스타일 조정 */

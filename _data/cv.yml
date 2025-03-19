@@ -1,15 +1,15 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Computer Science
-      institution: University of Wollongong
-      year: 20XX
-      description:
-    - title: M.Sc. in Computer Science
-      institution: ETH Zurich
-      year: 19XX
-      description:
-    - title: B.Sc. & M.Sc. in Computer Science
-      institution: KAIST
-      year: 19XX
-      description:
+    - title: Ph.D
+      institution: University of Wollongong, Australia
+      year: 2016
+    - title: M.Sc.
+      institution: ETH Zurich, Switzerland
+      year: 2012
+    - title: M.Sc.
+      institution: KAIST, Korea
+      year: 2004
+    - title: B.Sc.
+      institution: KAIST, Korea
+      year: 2002

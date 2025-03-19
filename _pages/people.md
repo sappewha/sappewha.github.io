@@ -57,4 +57,11 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>ansusthf@gmail.com</p>
+
+  - align: left
+    image: Gyurim.jpg
+    name: Gyurim Kim
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>2371075@ewhain.net</p>
 ---
