@@ -1,42 +1,61 @@
 ---
 layout: page
+title: Teaching
 ---
+
 <style>
-  .semester-section {
-      margin-top: 50px;
+  .teaching-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
   }
 
   .semester-title {
-      font-size: 2.8rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #222;
-  }
-
-  .semester-content ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-  }
-
-  .semester-content div {
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: #4b4a4a;
-}
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    color: #222;
+  }
+
+  .course-item {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .course-item::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #aaa;
+  }
+
+  .link-hidden {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+  }
+
+  .link-hidden:hover {
+    text-decoration: underline dotted;
+    color: #1a73e8;
+  }
 </style>
 
-
-<div class="teaching-sections">
+<div class="teaching-container">
   {% for semester in site.data.teaching %}
-  <div class="semester-section">
     <div class="semester-title">{{ semester.name }}</div>
-    <div class="semester-content">
-        {% for course in semester.courses %}
-          <div>- {{ course }}</div>
-        {% endfor %}
-    </div>
-  </div>
+    {% for course in semester.courses %}
+      <div class="course-item">
+        <a class="link-hidden" href="/assets/pdf/teaching/{{ semester.name }}-{{ course.code }}-{{ course.section }}.pdf" target="_blank">
+          {{ course.name }} ( {{ course.code }}- {{   course.section  }} )
+        </a>
+      </div>
+    {% endfor %}
   {% endfor %}
 </div>

@@ -1,20 +1,74 @@
 - name: 2025-1
   courses:
-    - 디지털포렌식스
-    - 블록체인특론
-  
+    - name: 블록체인특론
+      code: G17708
+      section: "01"
+    - name: 디지털포렌식스
+      code: 38497
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅰ
+      code: 38491
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅰ
+      code: 38491
+      section: "02"
+    
+
 - name: 2024-2
   courses:
-    - 웹보안및실습
-    - 블록체인응용
-    - AI기반 IoT보안
+    - name: AI기반IoT보안
+      code: G18461
+      section: "01"
+    - name: 웹보안및실습
+      code: 38485
+      section: "01"
+    - name: 블록체인응용
+      code: 38487
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅱ
+      code: 38909
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅱ
+      code: 38909
+      section: "02"
 
 - name: 2024-1
   courses:
-    - 디지털포렌식스
-    - 차세대보안특론
+    - name: 차세대보안특론
+      code: G17710
+      section: "01"
+    - name: 디지털포렌식스
+      code: 38497
+      section: "01"
+    
 
 - name: 2023-2
   courses:
-    - 웹보안및실습
-    - 블록체인응용
+    - name: 웹보안및실습
+      code: 38485
+      section: "01"
+    - name: 웹보안및실습
+      code: 38485
+      section: "02"
+    - name: 블록체인응용
+      code: 38487
+      section: "01"
+
+- name: 2023-1
+  courses:
+    - name: 차세대보안특론
+      code: G17710
+      section: "01"
+    - name: 디지털포렌식스
+      code: 38497
+      section: "01"
+
+
+- name: 2022-2
+  courses:
+    - name: 웹보안및실습
+      code: 38485
+      section: "01"
+    - name: 블록체인응용
+      code: 38487
+      section: "01"
