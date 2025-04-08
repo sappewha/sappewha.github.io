@@ -3,6 +3,7 @@ layout: profiles
 permalink: /people/
 title: People
 description: members of the lab or group
+has_children: true
 nav: true
 nav_order: 1
 

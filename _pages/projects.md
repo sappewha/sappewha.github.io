@@ -5,7 +5,7 @@ permalink: /projects/
 description: 울희의 추억,,,
 nav: true
 nav_order: 5
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 

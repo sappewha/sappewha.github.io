@@ -1,0 +1,87 @@
+---
+layout: page
+---
+
+<style>
+  .research-interests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.research-interests .interest {
+  text-align: center;
+  flex: 1;
+  max-width: 120px;
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+}
+
+.research-interests .interest:last-child {
+  border-right: none;
+}
+
+.research-interests .interest img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.research-interests .interest p {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #375072;
+  margin: 0;
+}
+
+</style>
+
+<div class="post">
+  <article>
+    <h1 class="post-title">{{ page.description }}</h1>
+    <p class="post-date">{{ page.start_date | date: "%Y. %m. %d" }}</p>
+    <div class="divider"></div>
+
+    {{ content }}
+
+    <h2 style="text-align: center; margin-bottom: 40px;">Research Interests</h2>
+
+    <div class="research-interests">
+      <div class="interest">
+        <img src="/assets/img/icons/blockchain.png" alt="IOT">
+        <p>IOT</p>
+      </div>
+      <div class="interest">
+        <img src="/assets/img/icons/blockchain.png" alt="PRIVACY">
+        <p>PRIVACY</p>
+      </div>
+      <div class="interest">
+        <img src="/assets/img/icons/blockchain.png" alt="SECURITY">
+        <p>SECURITY</p>
+      </div>
+      <div class="interest">
+        <img src="/assets/img/icons/blockchain.png" alt="BLOCKCHAIN">
+        <p>BLOCKCHAIN</p>
+      </div>
+      <div class="interest">
+        <img src="/assets/img/icons/blockchain.png" alt="COMMUNICATION">
+        <p>COMMUNICATION</p>
+      </div>
+    </div>
+    
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
