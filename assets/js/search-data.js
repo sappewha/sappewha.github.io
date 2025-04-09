@@ -68,6 +68,31 @@ ninja.data = [{
       },
     },{id: "projects-photo",
           title: 'Photo',
+          description: "중국 출장",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20240324_China/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "ASK 2024",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20240523_ASK/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2024 IT21 Global Conference",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20240703_IT21/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "중국 출장",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20240724_China/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2024 KISIA 정보보호 개발자 해커톤",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20240820_KISA/";
+            },},{id: "projects-photo",
+          title: 'Photo',
           description: "2024 CVC 워크숍",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20241126_CVC/";
@@ -81,6 +106,11 @@ ninja.data = [{
           description: "Mobisec 2024",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20241217_Mobisec/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "중국 출장",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250402_China/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
