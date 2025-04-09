@@ -50,7 +50,7 @@ profiles:
     name: Jeeeun Park
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>lucykorea414@ewhain.net</p>
+      <p>lucykorea414@ewha.ac.kr</p>
 
   - align: left
     image: Hyunsol.jpg
