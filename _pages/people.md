@@ -65,4 +65,12 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>2371075@ewhain.net</p>
+
+
+
+alumni:
+  - name: Hyunbeen Im
+    degree: Undergraduate student
+    period : 2022.03 ~ 2022.12
+
 ---
