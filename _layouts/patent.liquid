@@ -1,0 +1,60 @@
+---
+layout: page
+---
+
+<style>
+.patents-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.patent-entry {
+  margin-bottom: 20px;
+}
+
+.patent-entry p {
+  margin: 0;
+}
+
+.patent-entry .authors {
+  font-weight: bold;
+}
+
+.patent-entry .title {
+  display: inline;
+}
+
+.patent-entry .meta {
+  color: #555;
+}
+</style>
+
+<div class="patents-container">
+  {% assign sorted_patents = site.data.patents | sort: "year" | reverse %}
+  {% assign sorted_patents = sorted_patents | sort: "month" | reverse %}
+  {% assign counter = 1 %}
+
+  {% for patent in sorted_patents %}
+    <div class="patent-entry">
+      <p>[{{ counter }}] 
+        {% assign author_list = patent.authors | split: ", " %}
+        {% for author in author_list %}
+          {% if author == "김종길" %}
+            <span class="authors">{{ author }}</span>
+          {% else %}
+            {{ author }}
+          {% endif %}
+          {% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+        <span class="title">"{{ patent.title }}"</span>
+      </p>
+      <p class="meta">
+        Korean Patent. no. {% if patent.number != "" %}{{ patent.number }}{% else %}-{% endif %}, {{ patent.year }}-{% if patent.month < 10 %}0{{ patent.month }}{% else %}{{ patent.month }}{% endif %}
+      </p>
+    </div>
+    {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+</div>

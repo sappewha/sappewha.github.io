@@ -41,6 +41,23 @@ html, body {
     background: rgba(0, 0, 0, 0.1);
     margin: 20px auto;
 }
+
+.patents-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.patent-item {
+    margin-bottom: 20px;
+}
+
+.patent-item p {
+    margin: 0;
+}
+
 </style>
 
 <div class="post">
@@ -63,7 +80,4 @@ html, body {
     </div>
   {% endif %}
 
-  {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-  {% endif %}
 </div>
