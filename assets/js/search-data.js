@@ -118,6 +118,26 @@ ninja.data = [{
           description: "중국 출장",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250402_China/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "스승의 날",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250515_PDay/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "AISP 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250525_AISP/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "ASK 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250529_ASK/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2025 CVC 워크숍",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250618_CVC/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
