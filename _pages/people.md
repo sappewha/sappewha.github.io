@@ -53,13 +53,6 @@ profiles:
       <p>lucykorea414@ewha.ac.kr</p>
 
   - align: left
-    image: Hyunsol.jpg
-    name: Hyunsol Mun
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>ansusthf@gmail.com</p>
-
-  - align: left
     image: Gyurim.jpg
     name: Gyurim Kim
     image_circular: false # crops the image to make it circular
@@ -72,5 +65,7 @@ alumni:
   - name: Hyunbeen Im
     degree: Undergraduate student
     period : 2022.03 ~ 2022.12
-
+  - name: Hyunsol Mun
+    degree: Undergraduate student
+    period : 2024.07 ~ 2025.06
 ---
