@@ -59,7 +59,12 @@ profiles:
     more_info: >
       <p>2371075@ewhain.net</p>
 
-
+  - align: left
+    image: student_0.jpg
+    name: Soona Lee
+    image_circular: false
+    more_info: >
+      <p>soon22a@ewhain.net</p>
 
 alumni:
   - name: Hyunbeen Im
