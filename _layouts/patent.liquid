@@ -12,19 +12,24 @@ layout: page
 }
 
 .patent-entry {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .patent-entry p {
   margin: 0;
 }
 
-.patent-entry .authors {
+.patent-entry .title {
   font-weight: bold;
 }
 
-.patent-entry .title {
-  display: inline;
+.patent-entry .authors {
+  font-style: italic;
+}
+
+.patent-entry .highlight {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .patent-entry .meta {
@@ -39,21 +44,36 @@ layout: page
 
   {% for patent in sorted_patents %}
     <div class="patent-entry">
-      <p>[{{ counter }}] 
+      <!-- Line 1: Patent title -->
+      <p class="title">[{{ counter }}] "{{ patent.title }}"</p>
+
+      <!-- Line 2: Authors -->
+      <p class="authors">
         {% assign author_list = patent.authors | split: ", " %}
         {% for author in author_list %}
           {% if author == "김종길" %}
-            <span class="authors">{{ author }}</span>
+            <span class="highlight">{{ author }}</span>
           {% else %}
             {{ author }}
           {% endif %}
-          {% if forloop.last == false %}, {% endif %}
+          {% unless forloop.last %}, {% endunless %}
         {% endfor %}
-        <span class="title">"{{ patent.title }}"</span>
       </p>
+
+      <!-- Line 3: Type and patent number -->
       <p class="meta">
-        Korean Patent. no. {% if patent.number != "" %}{{ patent.number }}{% else %}-{% endif %}, {{ patent.year }}-{% if patent.month < 10 %}0{{ patent.month }}{% else %}{{ patent.month }}{% endif %}
+        {% if patent.type == "korean" %}
+          Korean Patent
+        {% elsif patent.type == "international" %}
+          International Patent
+        {% else %}
+          Patent
+        {% endif %}
+        no. {% if patent.number != "" %}{{ patent.number }}{% else %}-{% endif %}
       </p>
+
+      <!-- Line 4: Date -->
+      <p class="meta">{{ patent.year }}-{% if patent.month < 10 %}0{{ patent.month }}{% else %}{{ patent.month }}{% endif %}</p>
     </div>
     {% assign counter = counter | plus: 1 %}
   {% endfor %}

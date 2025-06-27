@@ -3,15 +3,18 @@
   number: "10-2024-0196975"
   year: 2024
   month: 12
+  type: "korean"
 
 - authors: "김종길, 김보은, 김연희"
   title: "네트워크 트래픽 검사 방법 및 장치"
   number: "10-2025-0062663"
   year: 2025
   month: 5
+  type: "korean"
 
 - authors: "심재형, 김종길, 강지의, 최소은, 김연희, 유은정"
   title: "동적 토큰 선택 및 동적 토큰 통합에 기반하여 태스크 인지 기반 지식 증류를 수행하는 태스크 인지 기반 지식 증류 장치 및 방법"
   number: "10-2025-0069129"
   year: 2025
   month: 5
+  type: "korean"
