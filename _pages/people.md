@@ -60,7 +60,7 @@ profiles:
       <p>2371075@ewhain.net</p>
 
   - align: left
-    image: student_0.jpg
+    image: Soona.jpg
     name: Soona Lee
     image_circular: false
     more_info: >
