@@ -18,7 +18,7 @@ profiles:
     more_info: >
     
   - align: left
-    image: Ella.png
+    image: Ella.jpg
     name: Djebbi, Ella
     image_circular: false # crops the image to make it circular
     more_info: >
