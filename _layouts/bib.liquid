@@ -114,11 +114,11 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% capture entrytype %}<em style="color: #a1a1a1;">{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
+      {% capture entrytype %}<em style="color: #a1a1a1;">{{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+      {% capture entrytype %}<em style="color: #a1a1a1;">{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -140,12 +140,12 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
+    <div class="periodical" style="color: #a1a1a1;">
       {{ periodical | strip }}
     </div>
 
     {% if entry.volume or entry.number or entry.pages %}
-      <div class="periodical">
+      <div class="periodical" style="color: #a1a1a1;">
         {% if entry.volume %}
           Vol. {{ entry.volume }}
           {% if entry.number %} (No. {{ entry.number }}){% endif %}
@@ -158,7 +158,7 @@
     {% endif %}
 
     {% if entry.note %}
-      <div class="periodical">
+      <div class="periodical" style="color: #a1a1a1;">
         {{ entry.note | strip }}
       </div>
     {% endif %}
@@ -166,7 +166,7 @@
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
+        <a class="award btn btn-sm z-depth-0" role="button" style="color: #a1a1a1;">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
