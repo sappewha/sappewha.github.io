@@ -75,7 +75,7 @@ ninja.data = [{
       },
     },{id: "projects-photo",
           title: 'Photo',
-          description: "중국 출장",
+          description: "Official Trip to Xi&#39;an, China",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20240324_China/";
             },},{id: "projects-photo",
@@ -90,7 +90,7 @@ ninja.data = [{
               window.location.href = "/projects/20240703_IT21/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "중국 출장",
+          description: "Official Trip to Xi&#39;an, China",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20240724_China/";
             },},{id: "projects-photo",
@@ -100,7 +100,7 @@ ninja.data = [{
               window.location.href = "/projects/20240820_KISA/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "2024 CVC 워크숍",
+          description: "2024 CVC Workshop",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20241126_CVC/";
             },},{id: "projects-photo",
@@ -115,7 +115,7 @@ ninja.data = [{
               window.location.href = "/projects/20241217_Mobisec/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "중국 출장",
+          description: "Official Trip to Xi&#39;an, China",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250402_China/";
             },},{id: "projects-photo",
@@ -125,7 +125,7 @@ ninja.data = [{
               window.location.href = "/projects/20250515_PDay/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "AISP 2025",
+          description: "AI Security &amp; Privacy 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250525_AISP/";
             },},{id: "projects-photo",
@@ -135,9 +135,24 @@ ninja.data = [{
               window.location.href = "/projects/20250529_ASK/";
             },},{id: "projects-photo",
           title: 'Photo',
-          description: "2025 CVC 워크숍",
+          description: "2025 CVC Workshop",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250618_CVC/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "Official Trip to Xi&#39;an, China",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250623_Xian/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2025 IT21 Global Conference",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250701_IT21/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "Korea Computer Congress 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250701_KCC/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
