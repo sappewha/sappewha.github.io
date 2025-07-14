@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/patents/";
           },
+        },{id: "nav-r-amp-d",
+          title: "R&amp;D",
+          description: "description (modify in &#39;_pages/cv.md&#39;)",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/resndev/";
+          },
         },{id: "nav-teaching",
           title: "Teaching",
           description: "",
