@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-r-amp-d",
           title: "R&amp;D",
-          description: "description (modify in &#39;_pages/cv.md&#39;)",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/resndev/";
