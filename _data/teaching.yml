@@ -1,3 +1,19 @@
+- name: 2025-2
+  courses:
+    - name: 블록체인응용
+      code: 38487
+      section: "01"
+    - name: 현대암호기초
+      code: 38475
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅱ
+      code: 38909
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅱ
+      code: 38909
+      section: "02"
+
+
 - name: 2025-1
   courses:
     - name: 블록체인특론
