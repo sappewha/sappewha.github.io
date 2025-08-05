@@ -18,6 +18,7 @@ profiles:
     more_info: >
     
   - align: left
+    role: phd
     image: Ella.jpg
     name: Djebbi, Ella
     image_circular: false # crops the image to make it circular
@@ -25,20 +26,23 @@ profiles:
       <p>djebbiella@gmail.com</p>
 
   - align: left
+    role: phd
     image: Yeonhee.jpg
     name: Yeonhee Kim
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>heedong@ewha.ac.kr</p>
 
-  - align: left
-    image: Boeun.png
-    name: Boeun Kim
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>boeun0v0@gmail.com</p>
+  # - align: left
+  #   role: ms
+  #   image: Boeun.png
+  #   name: Boeun Kim
+  #   image_circular: false # crops the image to make it circular
+  #   more_info: >
+  #     <p>boeun0v0@gmail.com</p>
   
   - align: left
+    role: ms
     image: Boluwatife.jpg
     name: Oshunlola, Boluwatife Alimat
     image_circular: false # crops the image to make it circular
@@ -46,20 +50,23 @@ profiles:
       <p>boluwatife@ewha.ac.kr</p>
 
   - align: left
+    role: undergraduate
     image: Jeeeun.jpg
     name: Jeeeun Park
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>lucykorea414@ewha.ac.kr</p>
 
-  - align: left
-    image: Gyurim.jpg
-    name: Gyurim Kim
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>2371075@ewhain.net</p>
+  # - align: left
+  #   role: undergraduate
+  #   image: Gyurim.jpg
+  #   name: Gyurim Kim
+  #   image_circular: false # crops the image to make it circular
+  #   more_info: >
+  #     <p>2371075@ewhain.net</p>
 
   - align: left
+    role: undergraduate
     image: Soona.jpg
     name: Soona Lee
     image_circular: false
@@ -73,4 +80,11 @@ alumni:
   - name: Hyunsol Mun
     degree: Undergraduate student
     period : 2024.07 ~ 2025.06
+  - name: Gyurim Kim
+    degree: Undergraduate student
+    period: 2025.03 ~ 2025.08
+  - name: Boeun Kim
+    degree: M.S. student
+    period: 2023.09 ~ 2025.08
+    job: AhnLab, solution architect
 ---
