@@ -86,5 +86,5 @@ alumni:
   - name: Boeun Kim
     degree: M.S. student
     period: 2023.09 ~ 2025.08
-    job: AhnLab, solution architect
+    job: AhnLab
 ---
