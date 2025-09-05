@@ -165,6 +165,11 @@ ninja.data = [{
           description: "The 26th World Conference on Information Security Applications",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250820_WISA/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2025년 8월 29일 보은의 졸업식",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20250829_BE_grad/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
