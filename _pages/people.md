@@ -24,6 +24,8 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>djebbiella@gmail.com</p>
+      <br>
+      <p>2023.09 ~</p>
 
   - align: left
     role: phd
@@ -32,6 +34,8 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>heedong@ewha.ac.kr</p>
+      <br>
+      <p>2024.03 ~</p>
 
   # - align: left
   #   role: ms
@@ -48,6 +52,8 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>boluwatife@ewha.ac.kr</p>
+      <br>
+      <p>2024.09 ~</p>
 
   - align: left
     role: undergraduate
@@ -56,22 +62,26 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>lucykorea414@ewha.ac.kr</p>
-
-  # - align: left
-  #   role: undergraduate
-  #   image: Gyurim.jpg
-  #   name: Gyurim Kim
-  #   image_circular: false # crops the image to make it circular
-  #   more_info: >
-  #     <p>2371075@ewhain.net</p>
+      <br>
+      <p>2024.04 ~</p>
 
   - align: left
     role: undergraduate
-    image: Soona.jpg
-    name: Soona Lee
-    image_circular: false
+    image: Gyurim.jpg
+    name: Gyurim Kim
+    image_circular: false # crops the image to make it circular
     more_info: >
-      <p>soon22a@ewhain.net</p>
+      <p>2371075@ewhain.net</p>
+      <br>
+      <p>2025.03 ~ 2025.08, 2026.01 ~</p>
+
+  # - align: left
+  #   role: undergraduate
+  #   image: Soona.jpg
+  #   name: Soona Lee
+  #   image_circular: false
+  #   more_info: >
+  #     <p>soon22a@ewhain.net</p>
 
 alumni:
   - name: Hyunbeen Im
@@ -80,11 +90,14 @@ alumni:
   - name: Hyunsol Mun
     degree: Undergraduate student
     period : 2024.07 ~ 2025.06
-  - name: Gyurim Kim
-    degree: Undergraduate student
-    period: 2025.03 ~ 2025.08
+  # - name: Gyurim Kim
+  #   degree: Undergraduate student
+  #   period: 2025.03 ~ 2025.08
   - name: Boeun Kim
     degree: M.S. student
     period: 2023.09 ~ 2025.08
     job: AhnLab
+  - name: Soona Lee
+    degree: Undergraduate student
+    period: 2025.07 ~ 2025.12
 ---
