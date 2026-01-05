@@ -1,6 +1,8 @@
 - title: Ongoing Research Projects
   type: time_table
   contents:
+    - title: 고신뢰 고효율 인공지능 교육연구단
+      institution: 한국연구재단 (4단계BK21사업-혁신인재양성(신산업))
     - title: 암호화된 데이터 트래픽 모니터링을 위한 패턴 탐지 시스템 개발 연구 
       institution: 한국연구재단
 
@@ -8,11 +10,11 @@
 - title: Completed Research Projects
   type: time_table
   contents:
-    - title: Fog 네트워크에서의 효율적이고 추적가능한 접근 제어
+    - title: 블록체인 상의 악의적인 사용자 추적을 위한 Accountable 전자서명에 관한 연구
+      institution: 한국연구재단
+    - title: 완전히 익명화된 연합학습에 관한 연구
       institution: 이화여자대학교
     - title: 클라우드 기반 암호기능 검증기술 연구
       institution: ETRI부설국가보안기술연구소
-    - title: 완전히 익명화된 연합학습에 관한 연구
+    - title: Fog 네트워크에서의 효율적이고 추적가능한 접근 제어
       institution: 이화여자대학교
-    - title: 블록체인 상의 악의적인 사용자 추적을 위한 Accountable 전자서명에 관한 연구
-      institution: 한국연구재단
