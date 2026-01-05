@@ -170,6 +170,11 @@ ninja.data = [{
           description: "2025년 8월 29일 보은의 졸업식",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20250829_BE_grad/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "Annual Conference of KIPS 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20251107_ACK/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
