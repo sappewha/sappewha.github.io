@@ -175,6 +175,16 @@ ninja.data = [{
           description: "Annual Conference of KIPS 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20251107_ACK/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "The International Conference on Artificial Intelligence Computing Systems 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20251126_AIComps/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "The 9th International Conference on Mobile Internet Security 2025",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20251216_Mobisec/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
