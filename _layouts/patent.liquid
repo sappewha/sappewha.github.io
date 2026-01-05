@@ -43,8 +43,8 @@ layout: page
 </style>
 
 <div class="patents-container">
-  {% assign sorted_patents = site.data.patents | sort: "year" | reverse %}
-  {% assign sorted_patents = sorted_patents | sort: "month" | reverse %}
+  {% assign sorted_patents = site.data.patents | sort: "year" %}
+  {% assign sorted_patents = sorted_patents | sort: "month" %}
   {% assign counter = 1 %}
 
   {% for patent in sorted_patents %}
