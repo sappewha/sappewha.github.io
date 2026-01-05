@@ -56,14 +56,14 @@ profiles:
       <p>2024.09 ~</p>
 
   - align: left
-    role: undergraduate
+    role: ms
     image: Jeeeun.jpg
     name: Jeeeun Park
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>lucykorea414@ewha.ac.kr</p>
       <br>
-      <p>2024.04 ~</p>
+      <p>2026.03 ~</p>
 
   - align: left
     role: undergraduate
@@ -83,21 +83,26 @@ profiles:
   #   more_info: >
   #     <p>soon22a@ewhain.net</p>
 
+
+# 역순으로 쌓기 #
 alumni:
-  - name: Hyunbeen Im
+  - name: Jeeeun Park
     degree: Undergraduate student
-    period : 2022.03 ~ 2022.12
-  - name: Hyunsol Mun
+    period: 2024.04 ~ 2026.02
+  - name: Soona Lee
     degree: Undergraduate student
-    period : 2024.07 ~ 2025.06
-  # - name: Gyurim Kim
-  #   degree: Undergraduate student
-  #   period: 2025.03 ~ 2025.08
+    period: 2025.07 ~ 2025.12
   - name: Boeun Kim
     degree: M.S. student
     period: 2023.09 ~ 2025.08
     job: AhnLab
-  - name: Soona Lee
+  # - name: Gyurim Kim
+  #   degree: Undergraduate student
+  #   period: 2025.03 ~ 2025.08
+  - name: Hyunsol Mun
     degree: Undergraduate student
-    period: 2025.07 ~ 2025.12
+    period : 2024.07 ~ 2025.06
+  - name: Hyunbeen Im
+    degree: Undergraduate student
+    period : 2022.03 ~ 2022.12
 ---
