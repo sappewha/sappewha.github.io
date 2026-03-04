@@ -1,3 +1,19 @@
+- name: 2026-1
+  courses:
+    - name: 웹보안및실습
+      code: 38485
+      section: "01"
+    - name: 디지털포렌식스
+      code: 38497
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅰ
+      code: 38491
+      section: "01"
+    - name: 사이버보안종합설계프로젝트Ⅰ
+      code: 38491
+      section: "02"
+
+
 - name: 2025-2
   courses:
     - name: 블록체인응용
