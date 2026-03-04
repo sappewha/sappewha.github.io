@@ -36,14 +36,6 @@ profiles:
       <p>heedong@ewha.ac.kr</p>
       <br>
       <p>2024.03 ~</p>
-
-  # - align: left
-  #   role: ms
-  #   image: Boeun.png
-  #   name: Boeun Kim
-  #   image_circular: false # crops the image to make it circular
-  #   more_info: >
-  #     <p>boeun0v0@gmail.com</p>
   
   - align: left
     role: ms
@@ -71,7 +63,7 @@ profiles:
     name: Gyurim Kim
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>2371075@ewhain.net</p>
+      <p>2371075@ewha.ac.kr</p>
       <br>
       <p>2025.03 ~ 2025.08, 2026.01 ~</p>
 
@@ -82,6 +74,16 @@ profiles:
   #   image_circular: false
   #   more_info: >
   #     <p>soon22a@ewhain.net</p>
+
+  - align: left
+    role: undergraduate
+    image: Yoonjoo.jpg
+    name: Yoonjoo Lee
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>y00nzoo@ewhain.net</p>
+      <br>
+      <p>2026.03 ~ </p>
 
 
 # 역순으로 쌓기 #
