@@ -185,6 +185,11 @@ ninja.data = [{
           description: "The 9th International Conference on Mobile Internet Security 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/20251216_Mobisec/";
+            },},{id: "projects-photo",
+          title: 'Photo',
+          description: "2026년 2월 23일 지은의 졸업식",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20260223_JE_grad/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
